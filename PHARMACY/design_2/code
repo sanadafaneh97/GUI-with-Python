@@ -1,0 +1,1156 @@
+# To create a class ...
+
+class Drug:
+    
+    def __init__(self, name, aisle, side, column, row):
+        
+        self.name = name
+        self.aisle = aisle
+        self.side = side
+        self.column = column
+        self.row = row
+        
+    def get_name(self):
+        
+        return self.name
+    
+    def get_aisle(self):
+        
+        return self.aisle
+    
+    def get_side(self):
+        
+        return self.side
+    
+    def get_column(self):
+        
+        return self.column
+    
+    def get_row(self):
+        
+        return self.row 
+
+
+# Drug information (name, aisle,, side, column, and row)...        
+Advair_Diskus = Drug("Advair Diskus", 1, "left", 1, 1)  
+Flovent_HFA = Drug("Flovent HFA", 1, "left", 1, 2) 
+Symbicort = Drug("Symbicort", 1, "left", 1, 3) 
+Spiriva_Handihaler = Drug("Spiriva Handihaler", 1, "left", 1, 4)
+
+Benicar = Drug("Benicar", 1, "left", 2, 1)
+Diovan = Drug("Diovan", 1, "left", 2, 2)
+Epogen = Drug("Epogen", 1, "left", 2, 3)
+Neulasta = Drug("Neulasta", 1, "left", 2, 4)
+Neupogen = Drug("Neupogen", 1, "left", 3, 1)
+Procrit = Drug("Procrit", 1, "left", 3, 2)
+Pradaxa = Drug("Pradaxa", 1, "left", 3, 3)
+Xarelto = Drug("Xarelto", 1, "left", 3, 4)
+
+Abilify = Drug("Abilify", 1, "right", 1, 1)  
+Cymbalta = Drug("Cymbalta", 1, "right", 1, 2)
+Invega_Sustenna = Drug("Invega Sustenna", 1, "right", 1, 3)
+Lunesta = Drug("Lunesta", 1, "right", 1, 4)
+Lyrica = Drug("Lyrica", 1, "right", 2, 1)
+Namenda = Drug("Namenda", 1, "right", 2, 2)  
+Seroquel_XR = Drug("Seroquel XR", 1, "right", 2, 3)
+Vyvanse = Drug("Vyvanse", 1, "right", 2, 4)
+
+Enbrel = Drug("Enbrel", 1, "right", 3, 1)
+Remicade = Drug("Remicade", 1, "right", 3, 2)
+Rituxan = Drug("Rituxan", 1, "right", 3, 3)
+
+Nasonex = Drug("Nasonex", 1, "right", 3, 4)
+
+Humalog = Drug("Humalog", 2, "left", 1, 1)
+Humalog_Kwikpen = Drug("Humalog Kwikpen", 2, "left", 1, 2) 
+Janumet = Drug("Janumet", 2, "left", 1, 3)
+Januvia = Drug("Januvia", 2, "left", 1, 4)
+Lantus = Drug("Lantus", 2, "left", 2, 1)
+Lantus_Solostar = Drug("Lantus Solostar", 2, "left", 2, 2)
+Levemir = Drug("Levemir", 2, "left", 2, 3)
+Novolog = Drug("Novolog", 2, "left", 2, 4)
+Novolog_Flexpen = Drug("Novolog Flexpen", 2, "left", 3, 1)
+Victoza_3_Pak = Drug("Victoza 3-Pak", 2, "left", 3, 2)
+
+Dexilant = Drug("Dexilant", 2, "left", 3, 3)
+Nexium = Drug("Nexium", 2, "left", 3, 4)
+
+Atripla = Drug("Atripla", 2, "right", 1, 1)
+Truvada = Drug("Truvada", 2, "right", 1, 2)
+Reyataz = Drug("Reyataz", 2, "right", 1, 3)
+Prezista = Drug("Prezista", 2, "right", 1, 4)
+Isentress = Drug("Isentress", 2, "right", 2, 1)
+
+Alimta = Drug("Alimta", 2, "right", 2, 2)
+Avastin = Drug("Avastin", 2, "right", 2, 3)
+Gleevec = Drug("Gleevec", 2, "right", 2, 4)
+Herceptin = Drug("Herceptin", 2, "right", 3, 1)
+Zytiga = Drug("Zytiga", 2, "right", 3, 2)
+
+Sensipar = Drug("Sensipar", 2, "right", 3, 3)
+Synthroid = Drug("Synthroid", 2, "right", 3, 4)
+
+Avonex = Drug("Avonex", 3, "left", 1, 1)
+Avonex_Pen = Drug("Avonex Pen", 3, "left", 1, 2)
+Copaxone = Drug("Copaxone", 3, "left", 1, 3)
+Gilenya = Drug("Gilenya", 3, "left", 1, 4)
+
+Humira = Drug("Humira", 3, "left", 2, 1)
+Orencia = Drug("Orencia", 3, "left", 2, 2)
+
+Evista = Drug("Evista", 3, "left", 2, 3)
+Xgeva = Drug("Xgeva", 3, "left", 2, 4)
+
+Stelara = Drug("Stelara", 3, "left", 3, 1)
+Tecfidera = Drug("Tecfidera", 3, "left", 3, 2)
+
+Oxycontin = Drug("Oxycontin", 3, "left", 3, 3)
+
+Sovaldi = Drug("Sovaldi", 3, "left", 3, 4)
+
+Cialis = Drug("Cialis", 3, "right", 1, 1)
+Viagra = Drug("Viagra", 3, "right", 1, 2)
+
+Crestor = Drug("Crestor", 3, "right", 1, 3)
+Vytorin = Drug("Vytorin", 3, "right", 1, 4)
+Zetia = Drug("Zetia", 3, "right", 2, 1)
+
+Renvela = Drug("Renvela", 3, "right", 2, 2)
+Vesicare = Drug("Vesicare", 3, "right", 2, 3)
+Lucentis = Drug("Lucentis", 3, "right", 2, 4)
+
+Celebrex = Drug("Celebrex", 3, "right", 3, 1)
+
+Prevnar_13 = Drug("Prevnar 13", 3, "right", 3, 2)
+
+Suboxone = Drug("Suboxone", 3, "right", 3, 3)
+
+Xolair = Drug("Xolair", 3, "right", 3, 4)
+
+
+# To create the "application" ...
+
+from tkinter import *    # Instead of having to type tkinter.SOMETHING every time 
+
+# For displaying images ...
+from PIL import Image 
+from PIL import ImageTk
+
+
+class Page(Frame):
+    
+    # To initialize ...
+    def __init__(self, *args, **kwargs):
+        # *args: pass an arbitrary no. of arguments to a function
+        # **kwargs: handle named arguments that were not defined in advance
+        
+        Frame.__init__(self, *args, **kwargs)
+        
+        # Menubar involved ...
+        super().__init__()   
+        self.MakeMenu()
+        
+    
+    # To make the menubar ...    
+    def MakeMenu(self):
+        
+        # This is a cascade menu
+        
+        menubar = Menu(self.master)
+        self.master.config(menu = menubar)
+        
+        OptionsMenu = Menu(menubar)       
+        
+        MapMenu = Menu(OptionsMenu)
+        
+        MapMenu.add_command(label = "Aisle 1", command = self.go_Aisle1)
+        MapMenu.add_command(label = "Aisle 2", command = self.go_Aisle2)
+        MapMenu.add_command(label = "Aisle 3", command = self.go_Aisle3)
+        
+        OptionsMenu.add_cascade(label = 'Map', menu = MapMenu, underline = 0)
+        # The command 'Map' generates a sub menu that contains the commands Aisle 1, Aisle 2, and Aisle 3 
+        
+        OptionsMenu.add_command(label = "Close", command = self.close_program)
+        
+        
+        menubar.add_cascade(label = "Options", underline = 0, menu = OptionsMenu)    
+        # 'Options' generates the cascade containing the other commands 
+   
+    def show(self):
+        # Because we can "change pages" ...
+        self.lift()
+        
+    def go_Aisle1(self):
+        # To obtain another 'frame' ... 
+        root2 = Toplevel(self.master)
+        project = Aisle1(root2)
+        
+    def go_Aisle2(self):
+        
+        root2 = Toplevel(self.master)
+        project = Aisle2(root2)
+        
+    def go_Aisle3(self):
+        
+        root2 = Toplevel(self.master)
+        project = Aisle3(root2)
+        
+    def close_program(self):
+        
+        self.master.destroy()
+        
+        
+        
+class Aisle1(Frame):
+    
+        def createWidgets(self):
+            
+            # Each of these three frames displays a certain image ...
+            
+            logo_filepath = "C:/Users/Owner/Desktop/GUI_project/Aisle1.gif"
+            img = PhotoImage(file = logo_filepath)
+            logo = Label(self, image = img)
+            logo.photo = img
+            logo.pack()
+            
+        def __init__(self, master = None):
+        
+            Frame.__init__(self, master)
+            self.pack()
+            self.createWidgets()
+            
+class Aisle2(Frame):
+    
+        def createWidgets(self):
+            
+            logo_filepath = "C:/Users/Owner/Desktop/GUI_project/Aisle2.gif"
+            img = PhotoImage(file = logo_filepath)
+            logo = Label(self, image = img)
+            logo.photo = img
+            logo.pack()
+            
+        def __init__(self, master = None):
+        
+            Frame.__init__(self, master)
+            self.pack()
+            self.createWidgets()
+            
+class Aisle3(Frame):
+    
+        def createWidgets(self):
+            
+            logo_filepath = "C:/Users/Owner/Desktop/GUI_project/Aisle3.gif"
+            img = PhotoImage(file = logo_filepath)
+            logo = Label(self, image = img)
+            logo.photo = img
+            logo.pack()
+            
+        def __init__(self, master = None):
+        
+            Frame.__init__(self, master)
+            self.pack()
+            self.createWidgets()
+
+
+class Page1(Page):
+    
+   def __init__(self, *args, **kwargs):
+       
+       Page.__init__(self, *args, **kwargs)
+       
+       # Label is used to display text ...
+       # You can manipulate the font of the text, as well as the position (notice the .grid syntax) ...
+       Label(self, text = "Enter name of drug", font=("Ariel", 10, "bold")).grid(row = 1, column = 0)
+       Label(self, text = " ").grid(row = 1, column = 1)
+       Label(self, text = " ").grid(row = 2, columnspan = 10)
+       Label(self, text = " ").grid(row = 3, column = 0)
+       Label(self, text = " ").grid(row = 4, column = 0)
+       
+       # Entry widget ...
+       e1 = Entry(self)
+       e1.grid(row = 1, column = 2)
+       
+       # To display the required data of the drugs ...
+       def go_to_func():
+           
+           # The "e1.get() ==" syntax: if a particular drug name is typed in the entry widget, the data for that certain drug will be displayed ...
+            
+            if e1.get() == "Advair Diskus" or e1.get() == "advair diskus" or e1.get() == "ADVAIR DISKUS":
+                
+                Label(self, text = ("Aisle:", Advair_Diskus.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Advair_Diskus.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Advair_Diskus.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Advair_Diskus.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Flovent HFA" or e1.get() == "flovent HFA" or e1.get() == "flovent hfa":
+                
+                Label(self, text = ("Aisle:", Flovent_HFA.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Flovent_HFA.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Flovent_HFA.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Flovent_HFA.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Symbicort" or e1.get() == "symbicort" or e1.get() == "SYMBICORT":
+                
+                Label(self, text = ("Aisle:", Symbicort.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Symbicort.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Symbicort.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Symbicort.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Spiriva Handihaler" or e1.get() == "spiriva handihaler" or e1.get() == "SPIRIVA HANDIHALER":
+                
+                Label(self, text = ("Aisle:", Spiriva_Handihaler.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Spiriva_Handihaler.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Spiriva_Handihaler.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Spiriva_Handihaler.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Benicar" or e1.get() == "benicar" or e1.get() == "BENICAR": 
+                
+                Label(self, text = ("Aisle:", Benicar.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Benicar.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Benicar.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Benicar.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Diovan" or e1.get() == "diovan" or e1.get() == "DIOVAN": 
+                
+                Label(self, text = ("Aisle:", Diovan.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Diovan.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Diovan.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Diovan.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Epogen" or e1.get() == "epogen" or e1.get() == "EPOGEN": 
+                
+                Label(self, text = ("Aisle:", Epogen.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Epogen.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Epogen.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Epogen.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Neulasta" or e1.get() == "neulasta" or e1.get() == "NEULASTA": 
+                
+                Label(self, text = ("Aisle:", Neulasta.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Neulasta.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Neulasta.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Neulasta.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Neupogen" or e1.get() == "neupogen" or e1.get() == "NEUPOGEN": 
+                
+                Label(self, text = ("Aisle:", Neupogen.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Neupogen.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Neupogen.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Neupogen.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Procrit" or e1.get() == "procrit" or e1.get() == "PROCRIT": 
+                
+                Label(self, text = ("Aisle:", Procrit.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Procrit.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Procrit.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Procrit.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Pradaxa" or e1.get() == "pradaxa" or e1.get() == "PRADAXA": 
+                
+                Label(self, text = ("Aisle:", Pradaxa.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Pradaxa.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Pradaxa.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Pradaxa.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Viagra" or e1.get() == "viagra" or e1.get() == "VIAGRA": 
+                
+                Label(self, text = ("Aisle:", Viagra.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Viagra.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Viagra.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Viagra.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Xarelto" or e1.get() == "xarelto" or e1.get() == "XARELTO": 
+                
+                Label(self, text = ("Aisle:", Xarelto.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Xarelto.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Xarelto.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Xarelto.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Abilify" or e1.get() == "abilify" or e1.get() == "ABILIFY": 
+                
+                Label(self, text = ("Aisle:", Abilify.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Abilify.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Abilify.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Abilify.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Cymbalta" or e1.get() == "cymbalta" or e1.get() == "CYMBALTA": 
+                
+                Label(self, text = ("Aisle:", Cymbalta.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Cymbalta.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Cymbalta.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Cymbalta.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Invega Sustenna" or e1.get() == "invega sustenna" or e1.get() == "INVEGA SUSTENNA": 
+                
+                Label(self, text = ("Aisle:", Invega_Sustenna.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Invega_Sustenna.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Invega_Sustenna.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Invega_Sustenna.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Lunesta" or e1.get() == "lunesta" or e1.get() == "LUNESTA": 
+                
+                Label(self, text = ("Aisle:", Lunesta.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Lunesta.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Lunesta.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Lunesta.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Lyrica" or e1.get() == "lyrica" or e1.get() == "LYRICA": 
+                
+                Label(self, text = ("Aisle:", Lyrica.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Lyrica.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Lyrica.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Lyrica.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Namenda" or e1.get() == "namenda" or e1.get() == "NAMENDA": 
+                
+                Label(self, text = ("Aisle:", Namenda.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Namenda.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Namenda.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Namenda.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Seroquel XR" or e1.get() == "seroquel xr" or e1.get() == "SEROQUEL XR": 
+                
+                Label(self, text = ("Aisle:", Seroquel_XR.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Seroquel_XR.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Seroquel_XR.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Seroquel_XR.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Vyvanse" or e1.get() == "vyvanse" or e1.get() == "VYVANSE": 
+                
+                Label(self, text = ("Aisle:", Vyvanse.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Vyvanse.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Vyvanse.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Vyvanse.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Enbrel" or e1.get() == "enbrel" or e1.get() == "ENBREL": 
+                
+                Label(self, text = ("Aisle:", Enbrel.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Enbrel.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Enbrel.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Enbrel.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Remicade" or e1.get() == "remicade" or e1.get() == "REMICADE": 
+                
+                Label(self, text = ("Aisle:", Remicade.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Remicade.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Remicade.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Remicade.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Rituxan" or e1.get() == "rituxan" or e1.get() == "RITUXAN": 
+                
+                Label(self, text = ("Aisle:", Rituxan.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Rituxan.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Rituxan.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Rituxan.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Nasonex" or e1.get() == "nasonex" or e1.get() == "NASONEX": 
+                
+                Label(self, text = ("Aisle:", Nasonex.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Nasonex.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Nasonex.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Nasonex.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+                
+            elif e1.get() == "Humalog" or e1.get() == "humalog" or e1.get() == "HUMALOG": 
+                
+                Label(self, text = ("Aisle:", Humalog.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Humalog.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Humalog.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Humalog.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+    
+            elif e1.get() == "Humalog Kwikpen" or e1.get() == "humalog kwikpen" or e1.get() == "HUMALOG KWIKPEN": 
+                
+                Label(self, text = ("Aisle:", Humalog_Kwikpen.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Humalog_Kwikpen.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Humalog_Kwikpen.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Humalog_Kwikpen.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Janumet" or e1.get() == "janumet" or e1.get() == "JANUMET": 
+                
+                Label(self, text = ("Aisle:", Janumet.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Janumet.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:",Janumet.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Janumet.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Januvia" or e1.get() == "januvia" or e1.get() == "JANUVIA": 
+                
+                Label(self, text = ("Aisle:", Januvia.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Januvia.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Januvia.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Januvia.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Lantus" or e1.get() == "lantus" or e1.get() == "LANTUS": 
+                
+                Label(self, text = ("Aisle:", Lantus.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Lantus.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Lantus.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Lantus.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Lantus Solostar" or e1.get() == "lantus solostar" or e1.get() == "LANTUS SOLOSTAR": 
+                
+                Label(self, text = ("Aisle:", Lantus_Solostar.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Lantus_Solostar.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Lantus_Solostar.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Lantus_Solostar.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Levemir" or e1.get() == "levemir" or e1.get() == "LEVEMIR": 
+                
+                Label(self, text = ("Aisle:", Levemir.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Levemir.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Levemir.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Levemir.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Novolog" or e1.get() == "novolog" or e1.get() == "NOVOLOG": 
+                
+                Label(self, text = ("Aisle:", Novolog.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Novolog.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Novolog.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Novolog.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Novolog Flexpen" or e1.get() == "novolog flexpen" or e1.get() == "NOVOLOG FLEXPEN": 
+                
+                Label(self, text = ("Aisle:", Novolog_Flexpen.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Novolog_Flexpen.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Novolog_Flexpen.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Novolog_Flexpen.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Victoza 3 Pak" or e1.get() == "victoza 3 pak" or e1.get() == "VICTOZA 3 PAK": 
+                
+                Label(self, text = ("Aisle:", Victoza_3_Pak.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Victoza_3_Pak.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Victoza_3_Pak.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Victoza_3_Pak.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Dexilant" or e1.get() == "dexilant" or e1.get() == "DEXILANT": 
+                
+                Label(self, text = ("Aisle:", Dexilant.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Dexilant.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Dexilant.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Dexilant.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Nexium" or e1.get() == "nexium" or e1.get() == "NEXIUM": 
+                
+                Label(self, text = ("Aisle:", Nexium.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Nexium.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Nexium.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Nexium.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Atripla" or e1.get() == "atripla" or e1.get() == "ATRIPLA": 
+                
+                Label(self, text = ("Aisle:", Atripla.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Atripla.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Atripla.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Atripla.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Truvada" or e1.get() == "truvada" or e1.get() == "TRUVADA": 
+                
+                Label(self, text = ("Aisle:", Truvada.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Truvada.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Truvada.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Truvada.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Reyataz" or e1.get() == "reyataz" or e1.get() == "REYATAZ": 
+                
+                Label(self, text = ("Aisle:", Reyataz.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Reyataz.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Reyataz.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Reyataz.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Prezista" or e1.get() == "prezista" or e1.get() == "PREZISTA": 
+                
+                Label(self, text = ("Aisle:", Prezista.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Prezista.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Prezista.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Prezista.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Isentress" or e1.get() == "isentress" or e1.get() == "ISENTRESS": 
+                
+                Label(self, text = ("Aisle:", Isentress.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Isentress.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Isentress.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Isentress.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Alimta" or e1.get() == "alimta" or e1.get() == "ALIMTA": 
+                
+                Label(self, text = ("Aisle:", Alimta.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Alimta.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Alimta.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Alimta.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Avastin" or e1.get() == "avastin" or e1.get() == "AVASTIN": 
+                
+                Label(self, text = ("Aisle:", Avastin.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Avastin.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Avastin.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Avastin.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Gleevec" or e1.get() == "gleevec" or e1.get() == "GLEEVEC": 
+                
+                Label(self, text = ("Aisle:", Gleevec.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Gleevec.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Gleevec.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Gleevec.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Herceptin" or e1.get() == "herceptin" or e1.get() == "HERCEPTIN": 
+                
+                Label(self, text = ("Aisle:", Herceptin.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Herceptin.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Herceptin.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Herceptin.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Zytiga" or e1.get() == "zytiga" or e1.get() == "ZYTIGA": 
+                
+                Label(self, text = ("Aisle:", Zytiga.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Zytiga.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Zytiga.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Zytiga.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Sensipar" or e1.get() == "sensipar" or e1.get() == "SENSIPAR": 
+                
+                Label(self, text = ("Aisle:", Sensipar.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Sensipar.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Sensipar.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Sensipar.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Synthroid" or e1.get() == "synthroid" or e1.get() == "SYNTHROID": 
+                
+                Label(self, text = ("Aisle:", Synthroid.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Synthroid.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Synthroid.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Synthroid.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Avonex" or e1.get() == "avonex" or e1.get() == "AVONEX": 
+                
+                Label(self, text = ("Aisle:", Avonex.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Avonex.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Avonex.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Avonex.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Avonex Pen" or e1.get() == "avonex pen" or e1.get() == "AVONEX PEN": 
+                
+                Label(self, text = ("Aisle:", Avonex_Pen.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Avonex_Pen.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Avonex_Pen.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Avonex_Pen.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Copaxone" or e1.get() == "copaxone" or e1.get() == "COPAXONE": 
+                
+                Label(self, text = ("Aisle:", Copaxone.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Copaxone.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Copaxone.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Copaxone.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Gilenya" or e1.get() == "gilenya" or e1.get() == "GILENYA": 
+                
+                Label(self, text = ("Aisle:", Gilenya.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Gilenya.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Gilenya.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Gilenya.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Humira" or e1.get() == "humira" or e1.get() == "HUMIRA": 
+                
+                Label(self, text = ("Aisle:", Humira.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Humira.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Humira.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Humira.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Orencia" or e1.get() == "orencia" or e1.get() == "ORENCIA": 
+                
+                Label(self, text = ("Aisle:", Orencia.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Orencia.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Orencia.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Orencia.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Evista" or e1.get() == "evista" or e1.get() == "ORENCIA": 
+                
+                Label(self, text = ("Aisle:", Evista.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Evista.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Evista.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Evista.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Xgeva" or e1.get() == "xgeva" or e1.get() == "XGEVA": 
+                
+                Label(self, text = ("Aisle:", Xgeva.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Xgeva.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Xgeva.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Xgeva.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Stelara" or e1.get() == "stelara" or e1.get() == "STELARA": 
+                
+                Label(self, text = ("Aisle:", Stelara.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Stelara.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Stelara.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Stelara.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+            
+            elif e1.get() == "Tecfidera" or e1.get() == "tecfidera" or e1.get() == "TECFIDERA": 
+                
+                Label(self, text = ("Aisle:", Tecfidera.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Tecfidera.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Tecfidera.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Tecfidera.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Oxycontin" or e1.get() == "oxycontin" or e1.get() == "OXYCONTIN": 
+                
+                Label(self, text = ("Aisle:", Oxycontin.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Oxycontin.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Oxycontin.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Oxycontin.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Sovaldi" or e1.get() == "sovaldi" or e1.get() == "SOVALDI": 
+                
+                Label(self, text = ("Aisle:", Sovaldi.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Sovaldi.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Sovaldi.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Sovaldi.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Cialis" or e1.get() == "cialis" or e1.get() == "CIALIS": 
+                
+                Label(self, text = ("Aisle:", Cialis.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Cialis.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Cialis.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Cialis.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Crestor" or e1.get() == "crestor" or e1.get() == "CRESTOR": 
+                
+                Label(self, text = ("Aisle:", Crestor.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Crestor.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Crestor.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Crestor.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Vytorin" or e1.get() == "vytorin" or e1.get() == "VYTORIN": 
+                
+                Label(self, text = ("Aisle:", Vytorin.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Vytorin.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Vytorin.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Vytorin.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Zetia" or e1.get() == "zetia" or e1.get() == "ZETIA": 
+                
+                Label(self, text = ("Aisle:", Zetia.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Zetia.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Zetia.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Zetia.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Renvela" or e1.get() == "renvela" or e1.get() == "RENVELA": 
+                
+                Label(self, text = ("Aisle:", Renvela.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Renvela.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Renvela.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Renvela.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Vesicare" or e1.get() == "vesicare" or e1.get() == "VESICARE": 
+                
+                Label(self, text = ("Aisle:", Vesicare.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Vesicare.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Vesicare.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Vesicare.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Lucentis" or e1.get() == "lucentis" or e1.get() == "LUCENTIS": 
+                
+                Label(self, text = ("Aisle:", Lucentis.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Lucentis.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Lucentis.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Lucentis.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Celebrex" or e1.get() == "celebrex" or e1.get() == "CELEBREX": 
+                
+                Label(self, text = ("Aisle:", Celebrex.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Celebrex.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Celebrex.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Celebrex.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Prevnar 13" or e1.get() == "prevnar 13" or e1.get() == "PREVNAR 13": 
+                
+                Label(self, text = ("Aisle:", Prevnar_13.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Prevnar_13.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Prevnar_13.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Prevnar_13.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Suboxone" or e1.get() == "suboxone" or e1.get() == "SUBOXONE": 
+                
+                Label(self, text = ("Aisle:", Suboxone.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Suboxone.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Suboxone.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Suboxone.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() == "Xolair" or e1.get() == "xolair" or e1.get() == "XOLAIR": 
+                
+                Label(self, text = ("Aisle:", Xolair.get_aisle()), fg="black", font=("Ariel", 10, "bold")).grid(row = 5)
+                Label(self, text = ("Side:", Xolair.get_side()), fg="black", font=("Ariel", 10, "bold")).grid(row = 6)
+                Label(self, text = ("Column:", Xolair.get_column()), fg="black", font=("Ariel", 10, "bold")).grid(row = 7)
+                Label(self, text = ("Row:", Xolair.get_row()), fg="black", font=("Ariel", 10, "bold")).grid(row = 8)
+     
+            elif e1.get() in ("", " ", "  ", "   ", "    ", "     ", "      ", "       ", "        ", "         "):
+                
+                Label(self, text = ("                           "), fg="black").grid(row = 5)
+                Label(self, text = ("                           "), fg="black").grid(row = 6)
+                Label(self, text = ("                           "), fg="black").grid(row = 7)
+                Label(self, text = ("                           "), fg="black").grid(row = 8)
+     
+                root2 = Toplevel(self.master)
+                project = Enter_Drug(root2)
+        
+            else: 
+                
+                Label(self, text = ("                           "), fg="black").grid(row = 5)
+                Label(self, text = ("                           "), fg="black").grid(row = 6)
+                Label(self, text = ("                           "), fg="black").grid(row = 7)
+                Label(self, text = ("                           "), fg="black").grid(row = 8)
+     
+                root2 = Toplevel(self.master)
+                project = Not_Found(root2)
+                
+                
+       def clear_func():
+           
+            # When the "CLEAR" button (later defined) is pressed, the displayed data of th drug that its name was typed in the entry widget will "disappear" ...
+            # The below is my logic for the clear function ...
+            
+            Label(self, text = ("                           "), fg="black").grid(row = 5)
+            Label(self, text = ("                           "), fg="black").grid(row = 6)
+            Label(self, text = ("                           "), fg="black").grid(row = 7)
+            Label(self, text = ("                           "), fg="black").grid(row = 8)
+        
+        
+       def help_func():
+           
+            # A frame containing some info. to guide users will be displayed ...
+           
+            root2 = Toplevel(self.master)
+            project = Help_btn(root2)
+        
+       
+       # Buttons ...
+        
+       # btn1 will display the locaton of the drug that its name was typed in the entry widget 
+       btn1 = Button(self, text = "LOCATION", command = go_to_func).grid(row = 3)
+       
+       # btn2 contains the command of the clear function previousely defined ...
+       btn2 = Button(self, text = "CLEAR", command = clear_func).grid(row = 3, column = 1)
+      
+       # btn3 contains the command of the help function previousely defined ... 
+       btn3 = Button(self, text = "HELP", command = help_func).grid(row = 3, column = 2)
+ 
+    
+    
+class Page2(Page):
+    
+   def __init__(self, *args, **kwargs):
+         
+       Page.__init__(self, *args, **kwargs)
+
+       self.pack()
+       self.create_widgets()
+       
+       
+   def create_widgets(self):
+       
+       # An entry widget will be used, such that if part of the name of a certain disease/ illness is typed, the listbox will be filtered displaying only the relevant info.
+       self.search_var = StringVar()
+       self.search_var.trace("w", lambda name, index, mode: self.update_list())
+       self.entry = Entry(self, textvariable = self.search_var, width=13)
+       
+       # To make the listbox
+       self.lbox = Listbox(self, width = 45, height = 15)
+       
+       Label(self, text = "Disease/ Illness: ", fg="black", font=("Ariel", 10, "bold")).grid(row = 0, column = 0)
+      
+       # Locations of the entry widget and the listbox
+       self.entry.grid(row = 0, column = 1, padx = 10, pady = 3)
+       self.lbox.grid(row = 1, column = 0, padx = 10, pady = 3)
+       
+       # To add a scrollbar to the listbox
+       self.scrollbar = Scrollbar(self)
+       self.scrollbar.grid(row=1, column=1, sticky=N+S+W)
+       self.scrollbar.config(command=self.lbox.yview)
+       
+       
+       self.update_list()
+   
+   # To filter the listbox then returning it back to its initial form
+   def update_list(self):
+       
+       search_term = self.search_var.get()
+       
+       # The data
+       lbox_data = ['Alzheimer', 'Anemia', 'Anxiety', 'Arthritis', 'Asthma',
+                    'Attention Deficit Hyperactivity Disorder', 'Autoimmune Diseases',
+                    'Breast Cancer', 'Binge Eating Disorder', 'Bipolar Disorder',
+                    'Bone Problems', 'Cancer', 'Cholesterol Problems', 'Chronic Myelogenous Leukemia', 
+                    'Diabetes', 'Eplipsy', 'Erectile Dysfunction', 'Gastrointestinal Stromal Tumors', 
+                    'Heart Failure', 'Hepatitis', 'HIV', 'Hyperparathyroidism', 'Hypertension', 'Hypocalcemia',
+                    'Infection caused by pneumococcal bacteria', 'Inflimation',
+                    'Insomnia', 'Major Depressive Disorder', 'Multiple Sclerosis',
+                    'Nasal Allergies', 'Neutropenia', 'Non-Small Cell Lung Cancers', 
+                    'Opioid Addiction', 'Other Cancers', 'Overactive Bladder', 'Pain Killers', 'Prostate Cancer',  
+                    'Psoriasis', 'Psychosis', 'Retina Problems', 'Sensitivity to allergens',  
+                    'Schizophrenia', 'Stomache Diseases', 'Thyroid Hormone Deficiency']
+         
+       self.lbox.delete(0, END)
+     
+       for item in lbox_data:
+           if search_term.lower() in item.lower():
+                self.lbox.insert(END, item)
+        
+        
+        
+       # Info. will be displayed once you double click on the desired row 
+       callback = lambda event : DoubleClick(event)
+       self.lbox.bind("<Double-Button-1>", callback) 
+        
+       def DoubleClick(event):
+           
+           widget = event.widget
+           selection = widget.curselection()
+           value = widget.get(selection[0])
+           
+           
+           # To be displayed
+           if value == "Alzheimer": 
+               Label(self, text = "Possible drug(s) for treatment: \n \n Namenda \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)   
+       
+           elif value == "Anemia":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Epogen \n \n Procrit \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Anxiety":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Cymbalta \n \n Lyrica \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Arthritis":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Humira \n \n Orencia \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Asthma":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Advair Diskus \n \n Flovent HFA \n \n Symbicort \n \n Spiriva Handihaler \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Attention Deficit Hyperactivity Disorder":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Vyvanse \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Autoimmune Diseases":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Enbrel \n \n Remicade \n \n Rituxan \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Breast Cancer":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Herceptin \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Binge Eating Disorder":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Vyvanse \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Bipolar Disorder":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Seroquel XR \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Bone Problems":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Evista \n \n Xgeva \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+           
+           elif value == "Cholesterol Problems":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Crestor \n \n Vytorin \n \n Zetia \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+            
+           elif value == "Chronic Myelogenous Leukemia":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Gleevec \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+            
+           elif value == "Diabetes":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Humalog \n Humalog Kwikpen \n \n Janumet \n \n Januvia \n \n Lantus \n Lantus Solostar \n \n Levemir \n \n Novolog \n Novolog Flexpen \n \n Victoza 3-Pak \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+            
+           elif value == "Eplipsy":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Lyrica \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Erectile Dysfunction":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Cialis \n \n Viagra \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Gastrointestinal Stromal Tumors":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Gleevec \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Heart Failure":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Diovan \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Hepatitis":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Sovaldi \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+       
+           elif value == "HIV":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Atripla \n \n Truvada \n \n Reyataz \n \n Prezista \n \n Isentress \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Hyperparathyroidism":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Sensipar \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Hypertension":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Benicar \n \n Diovan \n \n \n \n \n \n \n \n \n \n \n \n \n \n ", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Hypocalcemia":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Renvela \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Infection caused by pneumococcal bacteria":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Prevnar 13 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Inflimation":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Celebrex \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Insomnia":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Lunesta \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Major Depressive Disorder":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Seroquel XR \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Multiple Sclerosis":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Avonex \n \n Avonex Pen \n \n Copaxone \n \n Gilenya \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Nasal Allergies":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Nasonex \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Neutropenia":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Neulasta \n \n Neupogen \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Non-Small Cell Lung Cancers":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Alimta \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Opioid Addiction":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Suboxone \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Other Cancers":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Avastin \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Overactive Bladder":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Vesicare \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Pain Killers":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Oxycontin \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+         
+           elif value == "Prostate Cancer":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Zytiga \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Psoriasis":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Stelara \n \n Tecfidera \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Psychosis":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Abilify \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Retina Problems":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Lucentis \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Sensitivity to allergens":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Xolair \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Schizophrenia":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Invega Sustenna \n \n Seroquel XR \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Stomache Diseases":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Dexilant \n \n Nexium \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+           elif value == "Thyroid Hormone Deficiency":
+               Label(self, text = "Possible drug(s) for treatment: \n \n Synthroid \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n", fg="black", font=("Ariel", 10, "bold")).grid(row = 1, column = 2)
+        
+        
+class MAIN_FRAME(Frame):
+    
+# To initialize the main frame and the buttons that allow us to "change pages" ...    
+    
+    def __init__(self, *args, **kwargs):
+        
+        Frame.__init__(self, *args, **kwargs)
+        
+        pg_1 = Page1(self)
+        pg_2 = Page2(self)
+
+        buttonframe = Frame(self)
+        container = Frame(self)
+        buttonframe.pack(side = "top", fill = "x", expand = False)
+        container.pack(side = "top", fill = "both", expand = True)
+
+        pg_1.place(in_ = container, x = 0, y = 0, relwidth = 1, relheight = 1)
+        pg_2.place(in_=container, x = 0, y = 0, relwidth = 1, relheight = 1)
+        
+        # Defining the buttons that allow us to "change pages" ... 
+        btn1 = Button(buttonframe, text = "Drugs", command = pg_1.lift)
+        btn2 = Button(buttonframe, text = "Illness", command = pg_2.lift)
+
+        # Positions ...
+        btn1.pack(side = "left")
+        btn2.pack(side = "left")
+
+        pg_1.show()    # To initially show the frame concerned with the drugs 
+
+       
+class Not_Found(Frame):
+    
+    # This is what will happen if the name of the drug entered is incorrect, or the name is for a drug that is not included in the class "Drugs" 
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Drug not found!"), fg="black", font=("Ariel", 10, "bold")).grid(row = 1) 
+        
+        self.back = Button(self)    
+        self.back["text"] = "BACK"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 10, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 2, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.grid()
+        self.createWidgets()
+
+
+class Enter_Drug(Frame):
+    
+    # This is what will happen when the LOCATION button is pressed without entering the name of a drug in the entry widget
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Please enter the name of the drug you are looking for"), fg="black", font=("Ariel", 10, "bold")).grid(row = 1) 
+        
+        self.back = Button(self)    
+        self.back["text"] = "BACK"  
+        self.back["fg"]   = "blue"    
+        self.back["font"] = "Ariel", 10, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 2, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.grid()
+        self.createWidgets()
+        
+class Help_btn(Frame):
+    
+    # This is what the help function will display ...
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Type the name of the drug you are looking for. \n If you are searching for more than one drug, \n click the CLEAR button after obtaining the \n location of the previous drug."), font = ("Ariel", 10, "bold")).grid(row = 0, column = 1)  
+        Label(self, text = " ").grid(row = 1, column = 0)
+        
+         # There's a 'BACK' button that will close the frame once it is pressed
+        self.back = Button(self)    
+        self.back["text"] = "BACK"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 10, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 2, column = 1) 
+        
+    def go_back(self):
+    
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.grid()
+        self.createWidgets()
+        
+
+
+# To display the entire "design" ...
+
+root = Tk()
+main = MAIN_FRAME(root)
+main.pack(side="top", fill="both", expand=True)
+root.wm_geometry("550x400")   # Setting the dimensions 
+root.title("DRAFT DESIGN")    # Setting the title
+root.mainloop()
+
