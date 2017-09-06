@@ -1,0 +1,3821 @@
+class Drug:
+    
+    def __init__(self, name, aisle, side, column, row):
+        
+        self.name = name
+        self.aisle = aisle
+        self.side = side
+        self.column = column
+        self.row = row
+        
+    def get_name(self):
+        return self.name
+    
+    def get_aisle(self):
+        return self.aisle
+    
+    def get_side(self):
+        return self.side
+    
+    def get_column(self):
+        return self.column
+    
+    def get_row(self):
+        return self.row 
+
+       
+Advair_Diskus = Drug("Advair Diskus", 1, "left", 1, 1)  
+Flovent_HFA = Drug("Flovent HFA", 1, "left", 1, 2) 
+Symbicort = Drug("Symbicort", 1, "left", 1, 3) 
+Spiriva_Handihaler = Drug("Spiriva Handihaler", 1, "left", 1, 4)
+
+Benicar = Drug("Benicar", 1, "left", 2, 1)
+Diovan = Drug("Diovan", 1, "left", 2, 2)
+Epogen = Drug("Epogen", 1, "left", 2, 3)
+Neulasta = Drug("Neulasta", 1, "left", 2, 4)
+Neupogen = Drug("Neupogen", 1, "left", 3, 1)
+Procrit = Drug("Procrit", 1, "left", 3, 2)
+Pradaxa = Drug("Pradaxa", 1, "left", 3, 3)
+Xarelto = Drug("Xarelto", 1, "left", 3, 4)
+
+Abilify = Drug("Abilify", 1, "right", 1, 1)  
+Cymbalta = Drug("Cymbalta", 1, "right", 1, 2)
+Invega_Sustenna = Drug("Invega Sustenna", 1, "right", 1, 3)
+Lunesta = Drug("Lunesta", 1, "right", 1, 4)
+Lyrica = Drug("Lyrica", 1, "right", 2, 1)
+Namenda = Drug("Namenda", 1, "right", 2, 2)
+Seroquel_XR = Drug("Seroquel XR", 1, "right", 2, 3)
+Vyvanse = Drug("Vyvanse", 1, "right", 2, 4)
+
+Enbrel = Drug("Enbrel", 1, "right", 3, 1)
+Remicade = Drug("Remicade", 1, "right", 3, 2)
+Rituxan = Drug("Rituxan", 1, "right", 3, 3)
+
+Nasonex = Drug("Nasonex", 1, "right", 3, 4)
+
+Humalog = Drug("Humalog", 2, "left", 1, 1)
+Humalog_Kwikpen = Drug("Humalog Kwikpen", 2, "left", 1, 2)
+Janumet = Drug("Janumet", 2, "left", 1, 3)
+Januvia = Drug("Januvia", 2, "left", 1, 4)
+Lantus = Drug("Lantus", 2, "left", 2, 1)
+Lantus_Solostar = Drug("Lantus Solostar", 2, "left", 2, 2)
+Levemir = Drug("Levemir", 2, "left", 2, 3)
+Novolog = Drug("Novolog", 2, "left", 2, 4)
+Novolog_Flexpen = Drug("Novolog Flexpen", 2, "left", 3, 1)
+Victoza_3_Pak = Drug("Victoza 3-Pak", 2, "left", 3, 2)
+
+Dexilant = Drug("Dexilant", 2, "left", 3, 3)
+Nexium = Drug("Nexium", 2, "left", 3, 4)
+
+Atripla = Drug("Atripla", 2, "right", 1, 1)
+Truvada = Drug("Truvada", 2, "right", 1, 2)
+Reyataz = Drug("Reyataz", 2, "right", 1, 3)
+Prezista = Drug("Prezista", 2, "right", 1, 4)
+Isentress = Drug("Isentress", 2, "right", 2, 1)
+
+Alimta = Drug("Alimta", 2, "right", 2, 2)
+Avastin = Drug("Avastin", 2, "right", 2, 3)
+Gleevec = Drug("Gleevec", 2, "right", 2, 4)
+Herceptin = Drug("Herceptin", 2, "right", 3, 1)
+Zytiga = Drug("Zytiga", 2, "right", 3, 2)
+
+Sensipar = Drug("Sensipar", 2, "right", 3, 3)
+Synthroid = Drug("Synthroid", 2, "right", 3, 4)
+
+Avonex = Drug("Avonex", 3, "left", 1, 1)
+Avonex_Pen = Drug("Avonex Pen", 3, "left", 1, 2)
+Copaxone = Drug("Copaxone", 3, "left", 1, 3)
+Gilenya = Drug("Gilenya", 3, "left", 1, 4)
+
+Humira = Drug("Humira", 3, "left", 2, 1)
+Orencia = Drug("Orencia", 3, "left", 2, 2)
+
+Evista = Drug("Evista", 3, "left", 2, 3)
+Xgeva = Drug("Xgeva", 3, "left", 2, 4)
+
+Stelara = Drug("Stelara", 3, "left", 3, 1)
+Tecfidera = Drug("Tecfidera", 3, "left", 3, 2)
+
+Oxycontin = Drug("Oxycontin", 3, "left", 3, 3)
+
+Sovaldi = Drug("Sovaldi", 3, "left", 3, 4)
+
+Cialis = Drug("Cialis", 3, "right", 1, 1)
+Viagra = Drug("Viagra", 3, "right", 1, 2)
+
+Crestor = Drug("Crestor", 3, "right", 1, 3)
+Vytorin = Drug("Vytorin", 3, "right", 1, 4)
+Zetia = Drug("Zetia", 3, "right", 2, 1)
+
+Renvela = Drug("Renvela", 3, "right", 2, 2)
+Vesicare = Drug("Vesicare", 3, "right", 2, 3)
+Lucentis = Drug("Lucentis", 3, "right", 2, 4)
+
+Celebrex = Drug("Celebrex", 3, "right", 3, 1)
+
+Prevnar_13 = Drug("Prevnar 13", 3, "right", 3, 2)
+
+Suboxone = Drug("Suboxone", 3, "right", 3, 3)
+
+Xolair = Drug("Xolair", 3, "right", 3, 4)
+
+
+from tkinter import *        # To construct a GUI program 
+
+class Application(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Letter", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=7, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30)).grid(columnspan=7, sticky=W)
+        # For making the buttons 
+        
+        self.btnA = Button(self)    
+        self.btnA["text"] = "A" 
+        self.btnA["font"]   = "Ariel", 20, "bold"   
+        self.btnA["command"] = self.go_to_A    
+        self.btnA.grid(row = 4, column = 0)    
+        
+        self.btnB = Button(self)    
+        self.btnB["text"] = "B" 
+        self.btnB["font"]   = "Ariel", 20, "bold"   
+        self.btnB["command"] = self.go_to_B    
+        self.btnB.grid(row = 4, column = 1) 
+        
+        self.btnC = Button(self)    
+        self.btnC["text"] = "C" 
+        self.btnC["font"]   = "Ariel", 20, "bold"   
+        self.btnC["command"] = self.go_to_C  
+        self.btnC.grid(row = 4, column = 2)  
+        
+        self.btnD = Button(self)    
+        self.btnD["text"] = "D" 
+        self.btnD["font"]   = "Ariel", 20, "bold"   
+        self.btnD["command"] = self.go_to_D   
+        self.btnD.grid(row = 4, column = 3)
+        
+        self.btnE = Button(self)    
+        self.btnE["text"] = "E" 
+        self.btnE["font"]   = "Ariel", 20, "bold"   
+        self.btnE["command"] = self.go_to_E  
+        self.btnE.grid(row = 4, column = 4)
+        
+        self.btnF = Button(self)    
+        self.btnF["text"] = "F" 
+        self.btnF["font"]   = "Ariel", 20, "bold"   
+        self.btnF["command"] = self.go_to_F   
+        self.btnF.grid(row = 4, column = 5)
+        
+        self.btnG = Button(self)   
+        self.btnG["text"] = "G" 
+        self.btnG["font"]   = "Ariel", 20, "bold"   
+        self.btnG["command"] = self.go_to_G   
+        self.btnG.grid(row = 5, column = 0)
+        
+        self.btnH = Button(self)   
+        self.btnH["text"] = "H" 
+        self.btnH["font"]   = "Ariel", 20, "bold"   
+        self.btnH["command"] = self.go_to_H   
+        self.btnH.grid(row = 5, column = 1)
+        
+        self.btnI = Button(self)   
+        self.btnI["text"] = "I" 
+        self.btnI["font"]   = "Ariel", 20, "bold"   
+        self.btnI["command"] = self.go_to_I   
+        self.btnI.grid(row = 5, column = 2)
+        
+        self.btnJ = Button(self)   
+        self.btnJ["text"] = "J" 
+        self.btnJ["font"]   = "Ariel", 20, "bold"   
+        self.btnJ["command"] = self.go_to_J   
+        self.btnJ.grid(row = 5, column = 3)
+        
+        self.btnK = Button(self)   
+        self.btnK["text"] = "K" 
+        self.btnK["font"]   = "Ariel", 20, "bold"   
+        self.btnK["command"] = self.go_to_K   
+        self.btnK.grid(row = 5, column = 4)
+        
+        self.btnL = Button(self)   
+        self.btnL["text"] = "L" 
+        self.btnL["font"]   = "Ariel", 20, "bold"   
+        self.btnL["command"] = self.go_to_L   
+        self.btnL.grid(row = 5, column = 5)
+        
+        self.btnM = Button(self)   
+        self.btnM["text"] = "M" 
+        self.btnM["font"]   = "Ariel", 20, "bold"   
+        self.btnM["command"] = self.go_to_M   
+        self.btnM.grid(row = 6, column = 0)
+        
+        self.btnN = Button(self)   
+        self.btnN["text"] = "N" 
+        self.btnN["font"]   = "Ariel", 20, "bold"   
+        self.btnN["command"] = self.go_to_N   
+        self.btnN.grid(row = 6, column = 1)
+        
+        self.btnO = Button(self)   
+        self.btnO["text"] = "O" 
+        self.btnO["font"]   = "Ariel", 20, "bold"   
+        self.btnO["command"] = self.go_to_O   
+        self.btnO.grid(row = 6, column = 2)
+        
+        self.btnP = Button(self)   
+        self.btnP["text"] = "P" 
+        self.btnP["font"]   = "Ariel", 20, "bold"   
+        self.btnP["command"] = self.go_to_P   
+        self.btnP.grid(row = 6, column = 3)
+        
+        self.btnQ = Button(self)   
+        self.btnQ["text"] = "Q" 
+        self.btnQ["font"]   = "Ariel", 20, "bold"   
+        self.btnQ["command"] = self.go_to_Q   
+        self.btnQ.grid(row = 6, column = 4)
+        
+        self.btnR = Button(self)   
+        self.btnR["text"] = "R" 
+        self.btnR["font"]   = "Ariel", 20, "bold"   
+        self.btnR["command"] = self.go_to_R   
+        self.btnR.grid(row = 6, column = 5)
+        
+        self.btnS = Button(self)   
+        self.btnS["text"] = "S" 
+        self.btnS["font"]   = "Ariel", 20, "bold"   
+        self.btnS["command"] = self.go_to_S   
+        self.btnS.grid(row = 7, column = 0)
+        
+        self.btnT = Button(self)   
+        self.btnT["text"] = "T" 
+        self.btnT["font"]   = "Ariel", 20, "bold"   
+        self.btnT["command"] = self.go_to_T   
+        self.btnT.grid(row = 7, column = 1)
+        
+        self.btnU = Button(self)   
+        self.btnU["text"] = "U" 
+        self.btnU["font"]   = "Ariel", 20, "bold"   
+        self.btnU["command"] = self.go_to_U   
+        self.btnU.grid(row = 7, column = 2)
+        
+        self.btnV = Button(self)   
+        self.btnV["text"] = "V" 
+        self.btnV["font"]   = "Ariel", 20, "bold"   
+        self.btnV["command"] = self.go_to_V   
+        self.btnV.grid(row = 7, column = 3)
+        
+        self.btnW = Button(self)   
+        self.btnW["text"] = "W" 
+        self.btnW["font"]   = "Ariel", 20, "bold"   
+        self.btnW["command"] = self.go_to_W   
+        self.btnW.grid(row = 7, column = 4)
+        
+        self.btnX = Button(self)   
+        self.btnX["text"] = "X" 
+        self.btnX["font"]   = "Ariel", 20, "bold"   
+        self.btnX["command"] = self.go_to_X   
+        self.btnX.grid(row = 7, column = 5)
+        
+        self.btnY = Button(self)   
+        self.btnY["text"] = "Y" 
+        self.btnY["font"]   = "Ariel", 20, "bold"   
+        self.btnY["command"] = self.go_to_Y   
+        self.btnY.grid(row = 8, column = 2)
+        
+        self.btnZ = Button(self)   
+        self.btnZ["text"] = "Z" 
+        self.btnZ["font"]   = "Ariel", 20, "bold"   
+        self.btnZ["command"] = self.go_to_Z   
+        self.btnZ.grid(row = 8, column = 3)
+        
+        
+    def go_to_A(self):
+        
+        root2 = Toplevel(self.master)
+        project = A(root2)
+        
+    def go_to_B(self):
+        
+        root2 = Toplevel(self.master)
+        project = B(root2)
+        
+    def go_to_C(self):
+        
+        root2 = Toplevel(self.master)
+        project = C(root2)
+        
+    def go_to_D(self):
+        
+        root2 = Toplevel(self.master)
+        project = D(root2)
+        
+    def go_to_E(self):
+        
+        root2 = Toplevel(self.master)
+        project = E(root2)
+        
+    def go_to_F(self):
+        
+        root2 = Toplevel(self.master)
+        project = F(root2)
+        
+    def go_to_G(self):
+        
+        root2 = Toplevel(self.master)
+        project = G(root2)
+        
+    def go_to_H(self):
+        
+        root2 = Toplevel(self.master)
+        project = H(root2)
+        
+    def go_to_I(self):
+        
+        root2 = Toplevel(self.master)
+        project = I(root2)
+        
+    def go_to_J(self):
+        
+        root2 = Toplevel(self.master)
+        project = J(root2)
+        
+    def go_to_K(self):
+        
+        root2 = Toplevel(self.master)
+        project = K(root2)
+        
+    def go_to_L(self):
+        
+        root2 = Toplevel(self.master)
+        project = L(root2)
+        
+    def go_to_M(self):
+        
+        root2 = Toplevel(self.master)
+        project = M(root2)
+        
+    def go_to_N(self):
+        
+        root2 = Toplevel(self.master)
+        project = N(root2)
+        
+    def go_to_O(self):
+        
+        root2 = Toplevel(self.master)
+        project = O(root2)
+        
+    def go_to_P(self):
+        
+        root2 = Toplevel(self.master)
+        project = P(root2)
+        
+    def go_to_Q(self):
+        
+        root2 = Toplevel(self.master)
+        project = Q(root2)
+        
+    def go_to_R(self):
+        
+        root2 = Toplevel(self.master)
+        project = R(root2)
+        
+    def go_to_S(self):
+        
+        root2 = Toplevel(self.master)
+        project = S(root2)
+        
+    def go_to_T(self):
+        
+        root2 = Toplevel(self.master)
+        project = T(root2)
+        
+    def go_to_U(self):
+        
+        root2 = Toplevel(self.master)
+        project = U(root2)
+        
+    def go_to_V(self):
+        
+        root2 = Toplevel(self.master)
+        project = V(root2)
+        
+    def go_to_W(self):
+        
+        root2 = Toplevel(self.master)
+        project = W_W(root2)
+        
+    def go_to_X(self):
+        
+        root2 = Toplevel(self.master)
+        project = X(root2)
+        
+    def go_to_Y(self):
+        
+        root2 = Toplevel(self.master)
+        project = Y(root2)
+        
+    def go_to_Z(self):
+        
+        root2 = Toplevel(self.master)
+        project = Z(root2)
+
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class A(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Abilify" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Abilify
+        self.btn1.grid(row = 2, column = 0)
+
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Advair Diskus" 
+        self.btn2["font"]   = "Ariel", 20, "bold" 
+        self.btn2["command"] =  self.go_Advair_Diskus
+        self.btn2.grid(row = 2, column = 1) 
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Alimta" 
+        self.btn3["font"]   = "Ariel", 20, "bold"
+        self.btn3["command"] = self.go_Alimta
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Atripla" 
+        self.btn4["font"]   = "Ariel", 20, "bold" 
+        self.btn4["command"] = self.go_Atripla
+        self.btn4.grid(row = 3, column = 0)
+        
+        self.btn5 = Button(self)    
+        self.btn5["text"] = "Avastin" 
+        self.btn5["font"]   = "Ariel", 20, "bold"
+        self.btn5["command"] = self.go_Avastin
+        self.btn5.grid(row = 3, column = 1)
+        
+        self.btn6 = Button(self)    
+        self.btn6["text"] = "Avonex" 
+        self.btn6["font"]   = "Ariel", 20, "bold"
+        self.btn6["command"] = self.go_Avonex
+        self.btn6.grid(row = 3, column = 2)
+        
+        self.btn7 = Button(self)    
+        self.btn7["text"] = "Avonex Pen" 
+        self.btn7["font"]   = "Ariel", 20, "bold"
+        self.btn7["command"] = self.go_Avonex_Pen
+        self.btn7.grid(row = 4, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 1)
+        
+    def go_Abilify(self):
+        
+        root2 = Toplevel(self.master)
+        project = Abilify_description(root2)
+        
+    def go_Advair_Diskus(self):
+        
+        root2 = Toplevel(self.master)
+        project = Advair_Diskus_description(root2)
+        
+    def go_Alimta(self):
+        
+        root2 = Toplevel(self.master)
+        project = Alimta_description(root2)
+        
+    def go_Atripla(self):
+        
+        root2 = Toplevel(self.master)
+        project = Atripla_description(root2)
+        
+    def go_Avastin(self):
+        
+        root2 = Toplevel(self.master)
+        project = Avastin_description(root2)
+        
+    def go_Avonex(self):
+        
+        root2 = Toplevel(self.master)
+        project = Avonex_description(root2)
+        
+    def go_Avonex_Pen(self):
+        
+        root2 = Toplevel(self.master)
+        project = Avonex_Pen_description(root2)
+              
+    def go_back(self):
+        
+        self.master.destroy()
+        
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+        
+class B(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Benicar" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Benicar
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0)  
+        
+    def go_Benicar(self):
+        
+        root2 = Toplevel(self.master)
+        project = Benicar_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class C(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Celebrex" 
+        self.btn1["font"]   = "Ariel", 20, "bold"
+        self.btn1["command"] = self.go_Celebrex
+        self.btn1.grid(row = 2, column = 0)
+
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Cialis" 
+        self.btn2["font"]   = "Ariel", 20, "bold"
+        self.btn2["command"] = self.go_Cialis
+        self.btn2.grid(row = 2, column = 1) 
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Copaxone" 
+        self.btn3["font"]   = "Ariel", 20, "bold"
+        self.btn3["command"] = self.go_Copaxone
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Crestor" 
+        self.btn4["font"]   = "Ariel", 20, "bold"
+        self.btn4["command"] = self.go_Crestor
+        self.btn4.grid(row = 3, column = 0)
+        
+        self.btn5 = Button(self)    
+        self.btn5["text"] = "Cymbalta" 
+        self.btn5["font"]   = "Ariel", 20, "bold"
+        self.btn5["command"] = self.go_Cymbalta
+        self.btn5.grid(row = 3, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1)
+        
+    def go_Celebrex(self):
+        
+        root2 = Toplevel(self.master)
+        project = Celebrex_description(root2)
+        
+    def go_Cialis(self):
+        
+        root2 = Toplevel(self.master)
+        project = Cialis_description(root2)
+        
+    def go_Copaxone(self):
+        
+        root2 = Toplevel(self.master)
+        project = Copaxone_description(root2)
+        
+    def go_Crestor(self):
+        
+        root2 = Toplevel(self.master)
+        project = Crestor_description(root2)
+        
+    def go_Cymbalta(self):
+        
+        root2 = Toplevel(self.master)
+        project = Cymbalta_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class D(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Dexilant" 
+        self.btn1["font"]   = "Ariel", 20, "bold"
+        self.btn1["command"] = self.go_Dexilant
+        self.btn1.grid(row = 2, column = 0)
+
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Diovan" 
+        self.btn2["font"]   = "Ariel", 20, "bold"
+        self.btn2["command"] = self.go_Diovan
+        self.btn2.grid(row = 2, column = 1) 
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 1)
+        
+    def go_Dexilant(self):
+        
+        root2 = Toplevel(self.master)
+        project = Dexilant_description(root2)
+        
+    def go_Diovan(self):
+        
+        root2 = Toplevel(self.master)
+        project = Diovan_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class E(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Enbrel" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Enbrel
+        self.btn1.grid(row = 2, column = 0)
+
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Epogen" 
+        self.btn2["font"]   = "Ariel", 20, "bold"
+        self.btn2["command"] = self.go_Epogen
+        self.btn2.grid(row = 2, column = 1) 
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Evista" 
+        self.btn3["font"]   = "Ariel", 20, "bold"
+        self.btn3["command"] = self.go_Evista
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 1)
+        
+    def go_Enbrel(self):
+        
+        root2 = Toplevel(self.master)
+        project = Enbrel_description(root2)
+        
+    def go_Epogen(self):
+        
+        root2 = Toplevel(self.master)
+        project = Epogen_description(root2)
+        
+    def go_Evista(self):
+        
+        root2 = Toplevel(self.master)
+        project = Evista_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class F(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Flovent HFA" 
+        self.btn1["font"]   = "Ariel", 20, "bold"   
+        self.btn1["command"] = self.go_Flovent_HFA
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0)    
+        
+    def go_Flovent_HFA(self):
+        
+        root2 = Toplevel(self.master)
+        project = Flovent_HFA_description(root2)
+        
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class G(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Gilenya" 
+        self.btn1["font"]   = "Ariel", 20, "bold"
+        self.btn1["command"] = self.go_Gilenya
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Gleevec" 
+        self.btn2["font"]   = "Ariel", 20, "bold" 
+        self.btn2["command"] = self.go_Gleevec
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0) 
+        
+    def go_Gilenya(self):
+        
+        root2 = Toplevel(self.master)
+        project = Gilenya_description(root2)
+        
+    def go_Gleevec(self):
+        
+        root2 = Toplevel(self.master)
+        project = Gleevec_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+
+class H(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Herceptin" 
+        self.btn1["font"]   = "Ariel", 20, "bold"
+        self.btn1["command"] = self.go_Herceptin
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Humalog" 
+        self.btn2["font"]   = "Ariel", 20, "bold"
+        self.btn2["command"] = self.go_Humalog
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Humalog Kwikpen" 
+        self.btn3["font"]   = "Ariel", 20, "bold"
+        self.btn3["command"] = self.go_Humalog_Kwikpen
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Humira" 
+        self.btn4["font"]   = "Ariel", 20, "bold" 
+        self.btn4["command"] = self.go_Humira
+        self.btn4.grid(row = 3, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1)    
+        
+    def go_Herceptin(self):
+        
+        root2 = Toplevel(self.master)
+        project = Herceptin_description(root2)
+        
+    def go_Humalog(self):
+        
+        root2 = Toplevel(self.master)
+        project = Humalog_description(root2)
+        
+    def go_Humalog_Kwikpen(self):
+        
+        root2 = Toplevel(self.master)
+        project = Humalog_Kwikpen_description(root2)
+        
+    def go_Humira(self):
+        
+        root2 = Toplevel(self.master)
+        project = Humira_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class I(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Invega Sustenna" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Invega_Sustenna
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Isentress" 
+        self.btn2["font"]   = "Ariel", 20, "bold"  
+        self.btn2["command"] = self.go_Isentress
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0)  
+        
+    def go_Invega_Sustenna(self):
+        
+        root2 = Toplevel(self.master)
+        project = Invega_Sustenna_description(root2)
+        
+    def go_Isentress(self):
+        
+        root2 = Toplevel(self.master)
+        project = Isentress_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class J(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Janumet" 
+        self.btn1["font"]   = "Ariel", 20, "bold"
+        self.btn1["command"] = self.go_Janumet
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Januvia" 
+        self.btn2["font"]   = "Ariel", 20, "bold"
+        self.btn2["command"] = self.go_Januvia
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0) 
+        
+    def go_Janumet(self):
+        
+        root2 = Toplevel(self.master)
+        project = Janumet_description(root2)
+        
+    def go_Januvia(self):
+        
+        root2 = Toplevel(self.master)
+        project = Januvia_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class K(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="None Found", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0)    
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+
+class L(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+                 
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Lantus" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Lantus
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Lantus Solostar" 
+        self.btn2["font"]   = "Ariel", 20, "bold" 
+        self.btn2["command"] = self.go_Lantus_Solostar
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Levemir" 
+        self.btn3["font"]   = "Ariel", 20, "bold"
+        self.btn3["command"] = self.go_Levemir
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Lucentis" 
+        self.btn4["font"]   = "Ariel", 20, "bold" 
+        self.btn4["command"] = self.go_Lucentis
+        self.btn4.grid(row = 3, column = 0)
+        
+        self.btn5 = Button(self)    
+        self.btn5["text"] = "Lunesta" 
+        self.btn5["font"]   = "Ariel", 20, "bold" 
+        self.btn5["command"] = self.go_Lunesta
+        self.btn5.grid(row = 3, column = 1)
+        
+        self.btn6 = Button(self)    
+        self.btn6["text"] = "Lyrica" 
+        self.btn6["font"]   = "Ariel", 20, "bold" 
+        self.btn6["command"] = self.go_Lyrica
+        self.btn6.grid(row = 3, column = 2)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1)  
+        
+    def go_Lantus(self):
+        
+        root2 = Toplevel(self.master)
+        project = Lantus_description(root2)
+        
+    def go_Lantus_Solostar(self):
+        
+        root2 = Toplevel(self.master)
+        project = Lantus_Solostar_description(root2)
+        
+    def go_Levemir(self):
+        
+        root2 = Toplevel(self.master)
+        project = Levemir_description(root2)
+        
+    def go_Lucentis(self):
+        
+        root2 = Toplevel(self.master)
+        project = Lucentis_description(root2)
+        
+    def go_Lunesta(self):
+        
+        root2 = Toplevel(self.master)
+        project = Lunesta_description(root2)
+        
+    def go_Lyrica(self):
+        
+        root2 = Toplevel(self.master)
+        project = Lyrica_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()  
+        
+class M(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="None Found", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets() 
+        
+class N(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Namenda" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Namenda
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Nasonex" 
+        self.btn2["font"]   = "Ariel", 20, "bold"  
+        self.btn2["command"] = self.go_Nasonex
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Neulasta" 
+        self.btn3["font"]   = "Ariel", 20, "bold"
+        self.btn3["command"] = self.go_Neulasta
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Neupogen" 
+        self.btn4["font"]   = "Ariel", 20, "bold"
+        self.btn4["command"] = self.go_Neupogen
+        self.btn4.grid(row = 3, column = 0)
+        
+        self.btn5 = Button(self)    
+        self.btn5["text"] = "Nexium" 
+        self.btn5["font"]   = "Ariel", 20, "bold" 
+        self.btn5["command"] = self.go_Nexium
+        self.btn5.grid(row = 3, column = 1)
+        
+        self.btn6 = Button(self)    
+        self.btn6["text"] = "Novolog" 
+        self.btn6["font"]   = "Ariel", 20, "bold"
+        self.btn6["command"] = self.go_Novolog
+        self.btn6.grid(row = 3, column = 2)
+        
+        self.btn7 = Button(self)    
+        self.btn7["text"] = "Novolog Flexpen" 
+        self.btn7["font"]   = "Ariel", 20, "bold"
+        self.btn7["command"] = self.go_Novolog_Flexpen
+        self.btn7.grid(row = 4, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 1) 
+        
+    def go_Namenda(self):
+        
+        root2 = Toplevel(self.master)
+        project = Namenda_description(root2)
+        
+    def go_Nasonex(self):
+        
+        root2 = Toplevel(self.master)
+        project = Nasonex_description(root2)
+        
+    def go_Neulasta(self):
+        
+        root2 = Toplevel(self.master)
+        project = Neulasta_description(root2)
+        
+    def go_Neupogen(self):
+        
+        root2 = Toplevel(self.master)
+        project = Neupogen_description(root2)
+        
+    def go_Nexium(self):
+        
+        root2 = Toplevel(self.master)
+        project = Nexium_description(root2)
+        
+    def go_Novolog(self):
+        
+        root2 = Toplevel(self.master)
+        project = Novolog_description(root2)
+        
+    def go_Novolog_Flexpen(self):
+        
+        root2 = Toplevel(self.master)
+        project = Novolog_Flexpen_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class O(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Orencia" 
+        self.btn1["font"]   = "Ariel", 20, "bold"  
+        self.btn1["command"] = self.go_Orencia
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Oxycontin" 
+        self.btn2["font"]   = "Ariel", 20, "bold" 
+        self.btn2["command"] = self.go_Oxycontin
+        self.btn2.grid(row = 2, column = 1) 
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0) 
+        
+    def go_Orencia(self):
+        
+        root2 = Toplevel(self.master)
+        project = Orencia_description(root2)
+        
+    def go_Oxycontin(self):
+        
+        root2 = Toplevel(self.master)
+        project = Oxycontin_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class P(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Pradaxa" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Pradaxa
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Prevnar 13" 
+        self.btn2["font"]   = "Ariel", 20, "bold" 
+        self.btn2["command"] = self.go_Prevnar_13
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Prezista" 
+        self.btn3["font"]   = "Ariel", 20, "bold" 
+        self.btn3["command"] = self.go_Prezista
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Procrit" 
+        self.btn4["font"]   = "Ariel", 20, "bold"
+        self.btn4["command"] = self.go_Procrit
+        self.btn4.grid(row = 3, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1) 
+        
+    def go_Pradaxa(self):
+        
+        root2 = Toplevel(self.master)
+        project = Pradaxa_description(root2)
+        
+    def go_Prevnar_13(self):
+        
+        root2 = Toplevel(self.master)
+        project = Prevnar_13_description(root2)
+        
+    def go_Prezista(self):
+        
+        root2 = Toplevel(self.master)
+        project = Prezista_description(root2)
+        
+    def go_Procrit(self):
+        
+        root2 = Toplevel(self.master)
+        project = Procrit_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+
+class Q(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="None Found", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets() 
+        
+class R(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Remicade" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Remicade
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Renvela" 
+        self.btn2["font"]   = "Ariel", 20, "bold" 
+        self.btn2["command"] = self.go_Renvela
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Reyataz" 
+        self.btn3["font"]   = "Ariel", 20, "bold"  
+        self.btn3["command"] = self.go_Reyataz
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Rituxan" 
+        self.btn4["font"]   = "Ariel", 20, "bold"
+        self.btn4["command"] = self.go_Rituxan
+        self.btn4.grid(row = 3, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1) 
+        
+    def go_Remicade(self):
+        
+        root2 = Toplevel(self.master)
+        project = Remicade_description(root2)
+        
+    def go_Renvela(self):
+        
+        root2 = Toplevel(self.master)
+        project = Renvela_description(root2)
+        
+    def go_Reyataz(self):
+        
+        root2 = Toplevel(self.master)
+        project = Reyataz_description(root2)
+        
+    def go_Rituxan(self):
+        
+        root2 = Toplevel(self.master)
+        project = Rituxan_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class S(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Sensipar" 
+        self.btn1["font"]   = "Ariel", 20, "bold"  
+        self.btn1["command"] = self.go_Sensipar
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Seroquel XR" 
+        self.btn2["font"]   = "Ariel", 20, "bold"  
+        self.btn2["command"] = self.go_Seroquel_XR
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Sovaldi" 
+        self.btn3["font"]   = "Ariel", 20, "bold"
+        self.btn3["command"] = self.go_Sovaldi
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Spiriva Handihaler" 
+        self.btn4["font"]   = "Ariel", 20, "bold"  
+        self.btn4["command"] = self.go_Spiriva_Handihaler
+        self.btn4.grid(row = 3, column = 0)
+        
+        self.btn5 = Button(self)    
+        self.btn5["text"] = "Stelara" 
+        self.btn5["font"]   = "Ariel", 20, "bold" 
+        self.btn5["command"] = self.go_Stelara
+        self.btn5.grid(row = 3, column = 1)
+        
+        self.btn6 = Button(self)    
+        self.btn6["text"] = "Suboxone" 
+        self.btn6["font"]   = "Ariel", 20, "bold" 
+        self.btn6["command"] = self.go_Suboxone
+        self.btn6.grid(row = 3, column = 2)
+        
+        self.btn7 = Button(self)    
+        self.btn7["text"] = "Symbicort" 
+        self.btn7["font"]   = "Ariel", 20, "bold" 
+        self.btn7["command"] = self.go_Symbicort
+        self.btn7.grid(row = 4, column = 0)
+        
+        self.btn8 = Button(self)    
+        self.btn8["text"] = "Synthroid" 
+        self.btn8["font"]   = "Ariel", 20, "bold"
+        self.btn8["command"] = self.go_Synthroid
+        self.btn8.grid(row = 4, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 1) 
+        
+    def go_Sensipar(self):
+        
+        root2 = Toplevel(self.master)
+        project = Sensipar_description(root2)
+        
+    def go_Seroquel_XR(self):
+        
+        root2 = Toplevel(self.master)
+        project = Seroquel_XR_description(root2)
+        
+    def go_Sovaldi(self):
+        
+        root2 = Toplevel(self.master)
+        project = Sovaldi_description(root2)
+        
+    def go_Spiriva_Handihaler(self):
+        
+        root2 = Toplevel(self.master)
+        project = Spiriva_Handihaler_description(root2)
+        
+    def go_Stelara(self):
+        
+        root2 = Toplevel(self.master)
+        project = Stelara_description(root2)
+        
+    def go_Suboxone(self):
+        
+        root2 = Toplevel(self.master)
+        project = Suboxone_description(root2)
+        
+    def go_Symbicort(self):
+        
+        root2 = Toplevel(self.master)
+        project = Symbicort_description(root2)
+        
+    def go_Synthroid(self):
+        
+        root2 = Toplevel(self.master)
+        project = Synthroid_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class T(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Tecfidera" 
+        self.btn1["font"]   = "Ariel", 20, "bold"  
+        self.btn1["command"] = self.go_Tecfidera
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Truvada" 
+        self.btn2["font"]   = "Ariel", 20, "bold" 
+        self.btn2["command"] = self.go_Truvada
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 1)
+        
+    def go_Tecfidera(self):
+        
+        root2 = Toplevel(self.master)
+        project = Tecfidera_description(root2)
+        
+    def go_Truvada(self):
+        
+        root2 = Toplevel(self.master)
+        project = Truvada_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class U(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="None Found", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 0)    
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class V(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Vesicare" 
+        self.btn1["font"]   = "Ariel", 20, "bold"   
+        self.btn1["command"] = self.go_Vesicare
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Viagra" 
+        self.btn2["font"]   = "Ariel", 20, "bold"   
+        self.btn2["command"] = self.go_Viagra
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Victoza 3-Pak" 
+        self.btn3["font"]   = "Ariel", 20, "bold"   
+        self.btn3["command"] = self.go_Victoza_3_Pak
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.btn4 = Button(self)    
+        self.btn4["text"] = "Vytorin" 
+        self.btn4["font"]   = "Ariel", 20, "bold" 
+        self.btn4["command"] = self.go_Vytorin
+        self.btn4.grid(row = 3, column = 0)
+        
+        self.btn5 = Button(self)    
+        self.btn5["text"] = "Vyvanse" 
+        self.btn5["font"]   = "Ariel", 20, "bold" 
+        self.btn5["command"] = self.go_Vyvanse
+        self.btn5.grid(row = 3, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1)
+        
+    def go_Vesicare(self):
+        
+        root2 = Toplevel(self.master)
+        prject = Vesicare_description(root2)
+        
+    def go_Viagra(self):
+        
+        root2 = Toplevel(self.master)
+        prject = Viagra_description(root2)
+        
+    def go_Victoza_3_Pak(self):
+        
+        root2 = Toplevel(self.master)
+        prject = Victoza_3_Pak_description(root2)
+        
+    def go_Vytorin(self):
+        
+        root2 = Toplevel(self.master)
+        prject = Vytorin_description(root2)
+        
+    def go_Vyvanse(self):
+        
+        root2 = Toplevel(self.master)
+        prject = Vyvanse_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class W_W(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="None Found", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class X(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Xarelto" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Xarelto
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Xgeva" 
+        self.btn2["font"]   = "Ariel", 20, "bold"  
+        self.btn2["command"] = self.go_Xgeva
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.btn3 = Button(self)    
+        self.btn3["text"] = "Xolair" 
+        self.btn3["font"]   = "Ariel", 20, "bold"  
+        self.btn3["command"] = self.go_Xolair
+        self.btn3.grid(row = 2, column = 2)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 1) 
+        
+    def go_Xarelto(self):
+        
+        root2 = Toplevel(self.master)
+        project = Xarelto_description(root2)
+        
+    def go_Xgeva(self):
+        
+        root2 = Toplevel(self.master)
+        project = Xgeva_description(root2)
+        
+    def go_Xolair(self):
+        
+        root2 = Toplevel(self.master)
+        project = Xolair_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Y(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="None Found", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 4, column = 1) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Z(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text="Choose a Drug", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text="", fg="red", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        
+        self.btn1 = Button(self)    
+        self.btn1["text"] = "Zetia" 
+        self.btn1["font"]   = "Ariel", 20, "bold" 
+        self.btn1["command"] = self.go_Zetia
+        self.btn1.grid(row = 2, column = 0)
+        
+        self.btn2 = Button(self)    
+        self.btn2["text"] = "Zytiga" 
+        self.btn2["font"]   = "Ariel", 20, "bold"  
+        self.btn2["command"] = self.go_Zytiga
+        self.btn2.grid(row = 2, column = 1)
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 3, column = 1) 
+        
+    def go_Zetia(self):
+        
+        root2 = Toplevel(self.master)
+        project = Zetia_description(root2)
+        
+    def go_Zytiga(self):
+        
+        root2 = Toplevel(self.master)
+        project = Zytiga_description(root2)
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Advair_Diskus_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Advair_Diskus.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Advair_Diskus.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Advair_Diskus.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Advair_Diskus.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Advair_Diskus.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Flovent_HFA_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Flovent_HFA.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Flovent_HFA.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Flovent_HFA.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Flovent_HFA.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Flovent_HFA.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Symbicort_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Symbicort.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Symbicort.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Symbicort.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Symbicort.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Symbicort.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Abilify_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Abilify.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Abilify.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Abilify.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Abilify.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Abilify.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Alimta_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Alimta.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Alimta.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Alimta.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Alimta.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Alimta.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Atripla_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Atripla.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Atripla.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Atripla.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Atripla.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Atripla.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Avastin_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Avastin.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Avastin.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Avastin.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Avastin.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Avastin.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Avonex_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Avonex.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Avonex.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Avonex.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Avonex.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Avonex.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Avonex_Pen_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Avonex_Pen.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Avonex_Pen.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Avonex_Pen.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Avonex_Pen.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Avonex_Pen.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Benicar_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Benicar.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Benicar.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Benicar.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Benicar.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Benicar.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+    
+class Celebrex_description(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Celebrex.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Celebrex.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Celebrex.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Celebrex.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Celebrex.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Cialis_description(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Cialis.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Cialis.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Cialis.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Cialis.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Cialis.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Copaxone_description(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Copaxone.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Copaxone.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Copaxone.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Copaxone.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Copaxone.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Crestor_description(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Crestor.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Crestor.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Crestor.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Crestor.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Crestor.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Cymbalta_description(Frame):
+
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Cymbalta.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Cymbalta.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Cymbalta.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Cymbalta.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Cymbalta.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Dexilant_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Dexilant.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Dexilant.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Dexilant.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Dexilant.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Dexilant.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Diovan_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Diovan.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Diovan.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Diovan.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Diovan.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Diovan.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Enbrel_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Enbrel.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Enbrel.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Enbrel.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Enbrel.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Enbrel.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Epogen_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Epogen.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Epogen.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Epogen.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Epogen.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Epogen.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Evista_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Evista.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Evista.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Evista.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Evista.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Evista.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Gilenya_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Gilenya.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Gilenya.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Gilenya.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Gilenya.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Gilenya.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Gleevec_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Gleevec.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Gleevec.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Gleevec.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Gleevec.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Gleevec.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Herceptin_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Herceptin.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Herceptin.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Herceptin.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Herceptin.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Herceptin.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Humalog_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Humalog.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Humalog.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Humalog.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Humalog.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Humalog.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Humalog_Kwikpen_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Humalog_Kwikpen.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Humalog_Kwikpen.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Humalog_Kwikpen.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Humalog_Kwikpen.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Humalog_Kwikpen.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Humira_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Humira.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Humira.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Humira.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Humira.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Humira.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Invega_Sustenna_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Invega_Sustenna.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Invega_Sustenna.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Invega_Sustenna.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Invega_Sustenna.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Invega_Sustenna.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+    
+class Isentress_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Isentress.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Isentress.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Isentress.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Isentress.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Isentress.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Janumet_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Janumet.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Janumet.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Janumet.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Janumet.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Janumet.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Januvia_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Januvia.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Januvia.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Januvia.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Januvia.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Januvia.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Lantus_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Lantus.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Lantus.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Lantus.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Lantus.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Lantus.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Lantus_Solostar_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Lantus_Solostar.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Lantus_Solostar.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Lantus_Solostar.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Lantus_Solostar.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Lantus_Solostar.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Levemir_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Levemir.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Levemir.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Levemir.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Levemir.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Levemir.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Lucentis_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Lucentis.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Lucentis.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Lucentis.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Lucentis.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Lucentis.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Lunesta_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Lunesta.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Lunesta.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Lunesta.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Lunesta.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Lunesta.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Lyrica_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Lyrica.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Lyrica.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Lyrica.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Lyrica.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Lyrica.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+    
+class Namenda_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Namenda.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Namenda.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Namenda.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Namenda.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Namenda.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Nasonex_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Nasonex.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Nasonex.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Nasonex.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Nasonex.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Nasonex.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Neulasta_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Neulasta.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Neulasta.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Neulasta.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Neulasta.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Neulasta.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Neupogen_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Neupogen.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Neupogen.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Neupogen.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Neupogen.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Neupogen.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Nexium_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Nexium.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Nexium.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Nexium.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Nexium.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Nexium.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Novolog_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Novolog.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Novolog.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Novolog.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Novolog.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Novolog.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Novolog_Flexpen_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Novolog_Flexpen.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Novolog_Flexpen.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Novolog_Flexpen.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Novolog_Flexpen.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Novolog_Flexpen.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Orencia_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Orencia.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Orencia.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Orencia.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Orencia.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Orencia.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Oxycontin_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Oxycontin.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Oxycontin.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Oxycontin.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Oxycontin.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Oxycontin.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+    
+class Pradaxa_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Pradaxa.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Pradaxa.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Pradaxa.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Pradaxa.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Pradaxa.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+
+class Prevnar_13_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Prevnar_13.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Prevnar_13.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Prevnar_13.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Prevnar_13.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Prevnar_13.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+
+class Prezista_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Prezista.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Prezista.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Prezista.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Prezista.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Prezista.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+
+class Oxycontin_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Oxycontin.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Oxycontin.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Oxycontin.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Oxycontin.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Oxycontin.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+
+class Procrit_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Procrit.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Procrit.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Procrit.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Procrit.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Procrit.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()        
+        
+class Remicade_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Remicade.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Remicade.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Remicade.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Remicade.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Remicade.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets() 
+        
+class Renvela_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Renvela.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Renvela.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Renvela.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Renvela.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Renvela.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets() 
+        
+class Reyataz_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Reyataz.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Reyataz.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Reyataz.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Reyataz.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Reyataz.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets() 
+        
+class Rituxan_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Rituxan.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Rituxan.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Rituxan.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Rituxan.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Rituxan.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets() 
+        
+class Sensipar_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Sensipar.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Sensipar.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Sensipar.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Sensipar.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Sensipar.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Seroquel_XR_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Seroquel_XR.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Seroquel_XR.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Seroquel_XR.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Seroquel_XR.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Seroquel_XR.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Sovaldi_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Sovaldi.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Sovaldi.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Sovaldi.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Sovaldi.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Sovaldi.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Spiriva_Handihaler_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Spiriva_Handihaler.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Spiriva_Handihaler.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Spiriva_Handihaler.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Spiriva_Handihaler.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Spiriva_Handihaler.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Stelara_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Stelara.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Stelara.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Stelara.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Stelara.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Stelara.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Suboxone_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Suboxone.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Suboxone.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Suboxone.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Suboxone.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Suboxone.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Symbicort_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Symbicort.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Symbicort.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Symbicort.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Symbicort.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Symbicort.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Synthroid_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Synthroid.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Synthroid.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Synthroid.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Synthroid.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Synthroid.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Tecfidera_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Tecfidera.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Tecfidera.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Tecfidera.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Tecfidera.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Tecfidera.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Truvada_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Truvada.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Truvada.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Truvada.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Truvada.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Truvada.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Vesicare_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Vesicare.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Vesicare.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Vesicare.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Vesicare.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Vesicare.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Viagra_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Viagra.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Viagra.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Viagra.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Viagra.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Viagra.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Victoza_3_Pak_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Victoza_3_Pak.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Victoza_3_Pak.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Victoza_3_Pak.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Victoza_3_Pak.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Victoza_3_Pak.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Vytorin_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Vytorin.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Vytorin.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Vytorin.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Vytorin.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Vytorin.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Vyvanse_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Vyvanse.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Vyvanse.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Vyvanse.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Vyvanse.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Vyvanse.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Xarelto_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Xarelto.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Xarelto.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Xarelto.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Xarelto.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Xarelto.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Xgeva_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Xgeva.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Xgeva.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Xgeva.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Xgeva.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Xgeva.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Xolair_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Xolair.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Xolair.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Xolair.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Xolair.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Xolair.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Zetia_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Zetia.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Zetia.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Zetia.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Zetia.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Zetia.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+class Zytiga_description(Frame):
+    
+    def createWidgets(self):
+        
+        Label(self, text = ("Name:", Zytiga.get_name()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Aisle:", Zytiga.get_aisle()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Side:", Zytiga.get_side()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Column:", Zytiga.get_column()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)
+        Label(self, text = ("Row:", Zytiga.get_row()), fg="blue", font=("Ariel", 30, "bold")).grid(columnspan=4, sticky=W)   
+        
+        self.back = Button(self)    
+        self.back["text"] = "Back"  
+        self.back["fg"]   = "red"    
+        self.back["font"] = "Ariel", 20, "bold"  
+        self.back["command"] =  self.go_back    
+        self.back.grid(row = 5, column = 0) 
+        
+    def go_back(self):
+        
+        self.master.destroy() 
+    
+    def __init__(self, master = None):
+        
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+root = Tk()     # To generate the frame of the widgets  
+root.title('1st GUI Program')  # Title 
+root.geometry('600x500')    # width x height 
+app = Application(master = root)   # To generate the buttons 
+app.mainloop()    # Without this command, nothing will be displayed when executing the code  
+# root.destroy()  
