@@ -1,0 +1,51 @@
+import datetime
+
+from tkinter import *        # To construct a GUI program 
+
+
+class Application(Frame):
+    
+    def question(self):
+        print("Hey there! What is the time right now?")
+    
+    def say_answer(self):
+        print("It is", datetime.datetime.now().time().strftime("%H:%M"), "right now")
+        # datetime.datetime.now() gives us the date (year - month - day), and exact time (hours : minutes: seconds.milliseconds)
+        # datetime.datetime.now().time() gives us the time in hours : minutes : seconds.milliseconds 
+        # datetime.datetime.now().time().strftime("%H:%M") gives us the time in hours : minutes
+
+    def createWidgets(self):
+        # For making the buttons 
+        
+        self.QUIT = Button(self)    # Make a button
+        self.QUIT["text"] = "Close Program"  # Display the phrase Close Program on the button 
+        self.QUIT["fg"]   = "red"    # The color of the word QUIT is red
+        self.QUIT["font"] = "Ariel", 20, "bold"  # Change the font and size of the text
+        self.QUIT["command"] =  self.quit   # Function of the button 
+        self.QUIT.pack({"side": "bottom"})    # Position of the button
+
+        self.hi = Button(self)    # To make another button
+        self.hi["text"] = "Question" # Display the word Question on the button
+        self.hi["font"]   = "Ariel", 20, "bold"   # Change the font and size of the text
+        self.hi["command"] = self.question    # Function of the button; refer to the say_hi function previousely defined 
+        self.hi.pack({"side": "left"})    # Position of the button 
+        
+        self.answer = Button(self)       # Make a button
+        self.answer["text"] = "Answer"   # Display the word Answer on the button
+        self.answer["fg"]   = "blue"     # The color of the word Answer is blue
+        self.answer["font"]   = "Ariel", 20, "bold"   # Change the font and size of the text
+        self.answer["command"] = self.say_answer   # Function of the button; refer to the say_answer function previousely defined   
+        self.answer.pack({"side" : "right"})    # Position of the button
+
+    def __init__(self, master = None):
+        Frame.__init__(self, master)
+        self.pack()
+        self.createWidgets()
+        
+
+root = Tk()     # To generate the frame of the widgets  
+root.title('1st GUI Program')  # Title 
+root.geometry('300x200')    # width x height 
+app = Application(master = root)   # To generate the buttons 
+app.mainloop()    # Without this command, nothing will be displayed when executing the code  
+root.destroy()    # To make the "Close Program" button work 
